@@ -1,9 +1,11 @@
 
 % Pasarle un vector de numeros aleatorios que siguen una distribucion geometrica
-function y = chi2test(vec, cuant)
+% p:
+% 0.5 para ej 6 y para gap test (0.5-1)
+% 0.4 para gap test (0.2-0.6)
+function y = chi2test(vec, cuant, p)
   
   bins = 9;
-  p = 0.5;
   N = length(vec);
   
   % Vector de ocurrencias de cada numero
