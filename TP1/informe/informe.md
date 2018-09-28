@@ -8,3 +8,4 @@
 * 0.54482
 
 ### Histograma
+![Histograma ejercicio 1](/TP1/informe/imagenes/1-histograma.png)
