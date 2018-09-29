@@ -25,3 +25,23 @@ Teórico 225
 ### Moda
 Distribución generada 0.00037551
 Teórico 0
+
+# Ejercicio 3
+### Histograma
+![Histograma ejercicio 3](/TP1/informe/imagenes/3-histograma.png)
+
+### Media
+Distribución generada 0.0036655
+Teórico 0
+
+### Varianza
+Distribución generada 0.99918
+Teórico 1
+
+### Moda
+Distribución generada -4.3974
+Teórico 0
+
+ 
+  
+  
