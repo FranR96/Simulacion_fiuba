@@ -1,8 +1,7 @@
 function y = geometricaMonedas(n)
   
-  p = 0.5;
-  
-  for i = 1:n
+  p = 0.5; 
+  for i = 1:n 
     
     cont = 0;
     u = rand();
