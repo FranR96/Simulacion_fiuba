@@ -9,7 +9,9 @@ function z = generadorNormalInversa(n)
   p = splinefit(x,y,8,"order",4);
   u=generadorAleatorioLineal(n);
   for i = 1:n
-    z(end+1) =ppval(p,u(i));
+    z(end+1) =round(1000*(ppval(p,u(i))))/1000;
 
   endfor
 endfunction
+
+
