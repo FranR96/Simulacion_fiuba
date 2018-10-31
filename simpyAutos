@@ -1,0 +1,17 @@
+import simpy
+import random
+
+time_sim = 10*60
+
+def auto(env):
+    autos = 1
+    while True:
+        yield env.timeout(random.expovariate(0.5))
+        print('Auto %d' %autos)
+        print('Auto llega a %d' %env.now)
+        yield env.timeout(3)
+        print('Auto estaciona en %d' %env.now)
+        autos=autos+1
+env = simpy.Environment()
+env.process(auto(env))
+env.run(until = time_sim)
