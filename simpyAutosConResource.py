@@ -14,6 +14,8 @@ def estacionar(env,numAuto,barrera):
         print('Tiempo %d: Auto %d estaciona ' %(env.now,numAuto))
 
 def auto(env):
+    # Con 2 barreras se descongestiona
+    # barrera = simpy.Resource(env, capacity = 2)
     barrera = simpy.Resource(env)
     autos = 1
     while True:
