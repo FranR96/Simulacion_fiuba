@@ -1,5 +1,5 @@
 function poisson()
-  cantidadLlamadas = 10000;
+  cantidadLlamadas = 100000;
   mediaTiempoLLegada = 4; 
   
   pOpcion11 = 0.6;
