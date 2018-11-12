@@ -1,5 +1,6 @@
 import simpy
 import random
+import matplotlib.pyplot
 
 from Granja import Granja
 from Solicitud import Solicitud
@@ -23,3 +24,8 @@ env = simpy.Environment()
 granja = Granja(env, CANT_SERVIDORES)
 env.process(generar_clientes(env, CANT_SOLICITUDES, MEDIA_EXP, granja))
 env.run()
+
+
+fig, ax = matplotlib.pyplot.subplots()
+ax.plot(granja.tiempo, granja.colas_maximas)
+matplotlib.pyplot.show()
